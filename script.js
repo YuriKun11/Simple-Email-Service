@@ -13,10 +13,11 @@ window.onload = function() {
         var userEmail = document.getElementsByName('user_email')[0].value;
         var message = document.getElementById('message').value;
 
+        //! IMPORANT ! //
+        //I changed the to_name as user_email so that I can send the gmail of the user in the message
         emailjs.send("service_8yzo5kq","template_589oxah",{
             from_name: userName,
-            to_name: "Kurumi",
-            from_email: userEmail,
+            to_name: userEmail,
             message: message,
         })
         .then(() => {
