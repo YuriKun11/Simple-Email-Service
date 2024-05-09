@@ -1,7 +1,7 @@
 (function() {
     // https://dashboard.emailjs.com/admin/account
     emailjs.init({
-        publicKey: "0gE8ynVDJTB3CzNYp",
+        publicKey: "YOUR_PUBLIC_KEY",
     });
 })();
 
@@ -15,7 +15,8 @@ window.onload = function() {
 
         //! IMPORANT ! //
         //I changed the to_name as user_email so that I can send the gmail of the user in the message
-        emailjs.send("service_8yzo5kq","template_589oxah",{
+        //Change with your own ID;s
+        emailjs.send("YOUR_SERVICE ID","YOUR_TEMPLATE_ID",{
             from_name: userName,
             to_name: userEmail,
             message: message,
